@@ -143,23 +143,23 @@
                 <form class="conc_form">
                     <div class="conc_form_wrap fir_conc">
                         <p class="conc_f_text">ФИО:</p>
-                        <input type="text" placeholder="Иванов Иван">
+                        <input placeholder="Иванов Иван" type="text">
                     </div>
                     <div class="conc_form_wrap sec_conc">
                         <p class="conc_f_text">Дата рождения:</p>
-                        <input type="text" placeholder="чч.мм.гг.">
+                        <input placeholder="чч.мм.гг." type="date">
                     </div>
                     <div class="conc_form_wrap thi_conc">
                         <p class="conc_f_text">Моб. телефон:</p>
-                        <input type="text" placeholder="+7 (_ _ _) - _ _ _ - _ _ - _ _">
+                        <input id="phone" placeholder="+7 (_ _ _) - _ _ _ - _ _ - _ _" type="tel">
                     </div>
                     <div class="conc_form_wrap fou_conc">
                         <p class="conc_f_text">E-mail:</p>
-                        <input type="text" placeholder="Введите Ваш E-mail">
+                        <input placeholder="Введите Ваш E-mail" type="email">
                     </div>
                 </form>
             </div>
-            <div class="details_data">
+            <div class="details_data in_2">
                 <br>
                 <div class="det_h3">
                     <h3>Информация о квартире</h3>
@@ -169,61 +169,93 @@
                     <div class="det_form_wrap_duo">
                         <div class="det_form_wrap det_fir">
                             <p class="det_form_text">Город, в котором планируете купить квартиру:</p>
-                            <input type="text" placeholder="В каком городе хотите купить квартиру?">
+                            <input placeholder="В каком городе хотите купить квартиру?" type="text">
                         </div>
                         <div class="det_form_wrap  det_sec">
                             <p class="det_form_text">Интересующий застройщик:</p>
-                            <input type="text" placeholder="Застрощик">
+                            <input placeholder="Застрощик" type="text">
                         </div>
                     </div>
                     <div class="det_form_wrap_duo">
                         <div class="det_form_wrap det_fir">
                             <p class="det_form_text">ЖК:</p>
-                            <input type="text" placeholder="ЖК">
+                            <input placeholder="ЖК" type="text">
                         </div>
                         <div class="det_form_wrap  det_sec">
-                            <p class="det_form_text">Стоимость квартиры от и до в рублях:</p>
-                            <input type="text" placeholder="от 1 млн. до 3 млн.">
+                            <p class="det_form_text izm">Стоимость квартиры от и до в рублях:</p>
+                            <input placeholder="от 1 млн. до 3 млн." type="number">
                         </div>
                     </div>
-                    <div class="det_form_four">
-                        <div class="det_form_wrap">
-                            <p class="det_form_text">Основные каналы и способы продаж:</p>
-                            <input type="text" placeholder="Каналы и способы продаж">
+
+
+                    <div class="det_form_four g_rid">
+                        <div class="det_form_wrap d_fi">
+                            <p class="det_form_text">Кол-во комнат</p>
+                            <input placeholder="Кол-во комнат" type="number">
                         </div>
-                        <div class="det_form_wrap">
-                            <p class="det_form_text">Есть ли клиентский офис (шоурум, офис отдела продаж). Если да,
-                                адреса:
+                        <div class="det_form_wrap d_s">
+                            <p class="det_form_text">Срок сдачи
                             </p>
-                            <input type="text" placeholder="Кол-во комнат">
+                            <input placeholder="Срок сдачи" type="text">
                         </div>
-                        <div class="det_form_wrap">
-                            <p class="det_form_text">Примерная доля маркетинговых расходов в бюджете компании:</p>
-                            <input type="text" placeholder="Кол-во комнат">
+                        <div class="det_form_wrap d_t">
+                            <p class="det_form_text">Площадь квартиры</p>
+                            <input placeholder="Выберите площадь" type="text">
                         </div>
-                        <div class="det_form_wrap">
-                            <p class="det_form_text">Опыт использования систем лояльности, доля таких клиентов от общего
-                                количества:</p>
-                            <input type="text" placeholder="Опыт">
+                        <div class="det_form_wrap d_f">
+                            <p class="det_form_text">Площадь кухни</p>
+                            <input placeholder="Выберите площадь" type="text">
                         </div>
                     </div>
-                    <div class="det_form_wrap_duo">
-                        <div class="det_form_wrap det_fir">
-                            <p class="det_form_text">Контактное лицо, должность:</p>
-                            <input type="text" placeholder="ФИО, Должность">
+
+                    <div class="det_form_four g_rid_fri">
+                        <div class="det_form_wrap d_fi">
+                            <p class="det_form_text">Район</p>
+                            <input placeholder="Район" type="text">
                         </div>
-                        <div class="det_form_wrap det_sec">
-                            <p class="det_form_text">Контакты:</p>
-                            <input type="text" placeholder="Контакты">
+                        <div class="det_form_wrap d_s">
+                            <p class="det_form_text">Этаж
+                            </p>
+                            <input placeholder="Этаж" type="number">
+                        </div>
+                        <div class="det_form_wrap d_t">
+                            <p class="det_form_text">Этажность дома</p>
+                            <input placeholder="Этажность дома" type="number">
                         </div>
                     </div>
                 </div>
+                <form class="conc_form str2">
+                    <div class="conc_form_wrap thi_conc">
+                        <p class="conc_f_text">Материал стен:</p>
+                        <input placeholder="Выберите материал" type="text">
+                    </div>
+                    <div class="conc_form_wrap fou_conc">
+                        <p class="conc_f_text">Ремонт:</p>
+                        <input placeholder="Какой ремонт нужен в квартире?" type="text">
+                    </div>
+                    <div class="conc_form_wrap thi_conc str2_li">
+                        <p class="conc_f_text">Удобная дата и время просмотра объекта:</p>
+                        <input placeholder="чч.мм.гг. _ _ : _ _" type="date">
+                    </div>
+                </form>
+            </div>
+            <div class="comment_block">
+                <p class="conc_f_text">Дополнения и комментарии:</p>
+                <textarea name="comment" placeholder="Ваши очень важные замечания и комментарии....."></textarea>
             </div>
             <div class="btn_place">
                 <button class="btn">Отправить заявку</button>
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/Script/jquery.maskedinput.js"></script>
+    <script src="/Script/jquery.maskedinput.min.js"></script>
+    <script>
+        $(function(){
+          $("#phone").mask("+7(999) 999-9999");
+        });
+        </script>
 </body>
 
 </html>
